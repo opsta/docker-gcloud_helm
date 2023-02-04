@@ -20,7 +20,7 @@ jobs:
             opsta/gcloud-helm
           # generate Docker tags based on the following events/attributes
           tags: |
-            type=semver,pattern={{version}}
+            type=semver,pattern={{raw}}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
